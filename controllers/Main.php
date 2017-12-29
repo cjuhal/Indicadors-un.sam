@@ -31,7 +31,7 @@ class Main extends TemplateController {
 		$this->template->render(
 			array(
 				// 'menuIzquierda'=>"menu_principal.php",
-				'imagen_guarda'=>"/img/indicadores.jpg",
+				'imagen_guarda'=>"css/indicadores/indicadores.jpg",
 				'tituloSistema'=>$tituloSistema,
 				'nombre'=>isset($nombre)?$nombre:"",
 				'apellido'=>isset($apellido)?$apellido:"",
