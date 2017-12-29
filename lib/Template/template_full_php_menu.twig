@@ -1,0 +1,72 @@
+{% block inicioHTML %} {% endblock %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ES-AR" xml:lang="ES-AR">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+	<title>UNSAM - Universidad Nacional de San Martín</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+
+	<link rel="stylesheet" type="text/css" href="http://www.unsam.edu.ar/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="http://www.unsam.edu.ar/css/style.css" />
+
+	<link rel="stylesheet" type="text/css" href="http://www.unsam.edu.ar/css/index1.css?<%=numerox%>" />
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://www.unsam.edu.ar/js/bootstrap.js"></script>
+	<link href="http://www.unsam.edu.ar/css/bootstrap.min.css" rel="stylesheet">
+	<link href="http://www.unsam.edu.ar/css/menu1.css" rel="stylesheet">
+	<link href="http://www.unsam.edu.ar/css/index2.css" rel="stylesheet">
+
+	<script type="text/javascript" src="http://www.unsam.edu.ar/js/jquery-scrolltofixed.js"></script>
+
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+	{% block scriptsHeader %} {% endblock %}
+</head>
+
+<body>
+	{% block header %} {% endblock %}
+
+	<div></div>
+	<div class="contenedor100" style="background-color:#fff; overflow:auto; background-image:url({{imagen_guarda}}); background-repeat:no-repeat; background-position-x: right; border-bottom:2px solid {{color_UA_Hex}}">
+		<div class="contenedor" style="position:relative; overflow:auto; padding:0">
+			<div class="grid3" style="background-color:{{color_UA_Hex}}; min-height:130px;">
+				<div id="menu_ua">
+					<div class="titulo"> {% block titulo %}{% endblock %} </div>
+				</div>
+			</div>
+			<div style="position:absolute; bottom:0;" class="oculto-movil">
+				<div style="float:left;background-color:{{color_UA_Hex}}; padding:10px; "><img src="http://www.unsam.edu.ar/img/flecha_blanca.png"></div>
+				<div style="background-color:#fff; color:#444; float:left; padding:2px 27px 2px 15px; font-size:150%; color:{{color_UA_Hex}}; border-right:1px solid {{color_UA_Hex}}; border-top:1px solid {{color_UA_Hex}}"> {% block tituloPagina %}{% endblock %}</div>
+				<div style="clear:both"></div>
+			</div>
+		</div>
+	</div>
+	<div class="contenedor100" style="background-color:#fff;">
+		<div class="contenedor">
+			<div class="grid3" style="background-color:{{color_UA_Hex}}; border-top:4px solid #fff; margin-top:0px; ">
+				<div id="menu_ua_sec">
+					{% block menuIzquierda %}{% endblock %}
+				</div>
+			</div>
+			<div class="grid9">
+				<div id="contenido" style="border-left: 1px solid {{color_UA_Hex}}" class="{{color_UA_a}}">
+					{% block antesContenido %}
+					<!-- Area para alertas o mensajes arriba de todo -->
+					{% endblock %} {% block contenido %} {% endblock %}
+					<div style="clear: both"></div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="clear:both"></div>
+
+	{% block footer %} {% endblock %}
+
+</body>
+
+</html>

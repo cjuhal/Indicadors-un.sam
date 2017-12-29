@@ -1,0 +1,166 @@
+input[type=checkbox],
+input[type=radio]
+{
+	visibility: visible;
+}
+
+.jsgrid input[type=checkbox],
+.jsgrid input[type=radio]
+{
+	visibility: visible;
+}
+input[type=checkbox] + label:before,
+input[type=radio] + label:before
+{
+	background: url(gr_custom-inputs.png) 0 -1px no-repeat;
+	position: absolute;
+	z-index: 2;
+	left: 16px;
+	content: "\00a0\00a0\00a0";
+	overflow: hidden;
+	width: 16px;
+	height: 16px;
+	margin: 0 3px 0-16px;
+	pointer-events: none;
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	cursor: pointer;
+}
+
+
+input[type=checkbox] + label
+input[type=radio] + label
+{
+	/* remove ability to interact with parent element */
+    pointer-events: none;
+
+    /* apply pointer cursor to parent element */
+    cursor:pointer;
+}
+
+input[type=radio] + label:before,
+input[type=checkbox] + label:before {
+	color: #5a5a5a;
+}
+
+input[type=radio] + label:before,
+input[type=radio]:focus + label:before,
+input[type=radio]:hover + label:before,
+input[type=radio]:active + label:before
+{
+	content: "\f10c";
+}
+
+/* fa-square-o */
+input[type=checkbox] + label:before,
+input[type=checkbox]:focus + label:before,
+input[type=checkbox]:hover + label:before,
+input[type=checkbox]:active + label:before
+{
+	content: "\f096";
+}
+
+input[type=checkbox] + label:before,
+input[type=checkbox]:focus + label:before,
+input[type=checkbox]:hover + label:before,
+input[type=checkbox]:active + label:before,
+input[type=radio] + label:before,
+input[type=radio]:focus + label:before,
+input[type=radio]:hover + label:before,
+input[type=radio]:active + label:before
+{
+	cursor: pointer;
+	/* restore ability to interact with child element */
+    pointer-events: auto;
+
+}
+
+/* Checked styles */
+input[type=radio]:checked  + label:before,
+input[type=checkbox]:checked + label:before
+{
+	color: #4285F4;
+}
+
+input[type=radio]:checked + label:before
+{
+	content: "\f111";
+}
+
+input[type=checkbox]:checked + label:before
+{
+	content: "\f046";
+}
+
+input[type=checkbox]:hover:checked + label:before,
+input[type=checkbox]:focus:checked + label:before,
+input[type=radio]:hover:checked + label:before,
+input[type=radio]:focus:checked + label:before
+{
+	color: #3163B6;
+}
+
+/* Hover & Focus styles */
+input[type=checkbox]:hover + label:before,
+input[type=checkbox]:focus + label:before,
+input[type=checkbox]:active + label:before,
+input[type=radio]:active:checked + label:before,
+input[type=radio]:hover + label:before,
+input[type=radio]:focus + label:before,
+input[type=radio]:active + label:before,
+input[type=checkbox]:active:checked + label:before
+{
+	color: #3163B6;
+}
+
+/* Active styles */
+
+
+/* Disabled styles */
+input[type=checkbox]:disabled + label:before,
+input[type=radio]:disabled + label:before
+{
+	cursor: not-allowed;
+	/* restore ability to interact with child element */
+    pointer-events: auto;
+}
+
+input[type=checkbox]:disabled + label:before,
+input[type=radio]:disabled + label:before
+{
+	color: #959595;
+}
+
+input[type=checkbox]:disabled:checked + label:before
+{
+	background-position: 0 -127px;
+}
+input[type=radio]:disabled:checked + label:before
+{
+	background-position: -32px -127px;
+}
+
+input[type=checkbox]:hover:disabled + label:before,
+input[type=checkbox]:focus:disabled + label:before
+{
+	background-position: 0 -55px;
+}
+input[type=radio]:hover:disabled + label:before,
+input[type=radio]:focus:disabled + label:before
+{
+	background-position: -32px -55px;
+}
+input[type=checkbox]:hover:disabled:checked + label:before,
+input[type=checkbox]:focus:disabled:checked + label:before
+{
+	background-position: 0 -127px;
+}
+input[type=radio]:hover:disabled:checked + label:before,
+input[type=radio]:focus:disabled:checked + label:before
+{
+	background-position: -32px -127px;
+}

@@ -1,0 +1,47 @@
+{% extends 'template_full_sistemas.twig' %}
+
+{% block inicioHTML %}
+
+{% endblock %}
+
+
+{% block header %}
+  {{ include "header.php" }}
+{% endblock %}
+
+
+{% block scriptsHeader %}
+
+<link rel="stylesheet" type="text/css" href="http://www.unsam.edu.ar/personal/concursos-pas/assets/css/styles.css" />
+
+<script src="http://www.unsam.edu.ar/personal/concursos-pas/assets/ckeditor/ckeditor.js" type="text/javascript"></script>
+
+<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+{% endblock %}
+
+{% block titulo %} {{tituloSistema}} {% endblock %}
+
+{% block tituloPagina %}  {% endblock %}
+
+{% block menuIzquierda %}
+{{ embed menuTemplate }}
+{% endblock %}
+
+
+{% block antesContenido %}
+{% endblock %}
+
+
+{% block contenido %}
+  {{contenidoHTML}}
+{% endblock %}
+
+
+
+
+{% block footer %}
+  UNSAM, Campus Miguelete, 25 de Mayo y Francia.<br>
+  1650 San Martín, Buenos Aires, Argentina<br>
+  Teléfono: (54-11) 4006-1500<br>
+  <a href="mail:informacion@unsam.edu.ar">informacion@unsam.edu.ar</a>
+{% endblock %}

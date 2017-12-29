@@ -1,0 +1,11 @@
+body
+{
+/*	font-size: 17px;
+	font-weight: 100;*/
+}
+
+.ng-table-sort-header th,
+.ng-table-filters th
+{
+	border: 1px solid #2574b1 !important;
+}

@@ -1,0 +1,61 @@
+label{
+  display: inline-block;
+  width: 45%;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.clear15
+{
+	clear: both;
+	margin-top: 15px;
+}
+
+.card-block
+{
+	padding: 1.25rem;
+}
+
+
+.btn-default {
+  background: #B0B0B0;
+}
+
+.btn-default:hover, .btn-default:focus {
+  background-color: #D3D3D3 !important;
+}
+
+.btn-default.active
+{
+	background-color: #8D8D8D !important;
+}
+
+.ng-table-sort-header th,
+.ng-table-filters th
+{
+	background-color: #2C88CD;
+	color: #FFF;
+}
+
+.btn.btn-default[disabled]
+{
+	border: 1px solid #ccc;
+	color: #E5E5E5;
+	background-color: #CDCDCD;
+}
+
+.tit_section
+{
+  background-color: #2c88cd;
+  color: #FFF;
+  padding: 0.5em;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+
+.form-control:focus
+{
+	background: #FFF !important;
+}

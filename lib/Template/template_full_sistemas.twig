@@ -1,0 +1,116 @@
+ {% block inicioHTML %} {% endblock %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ES-AR" xml:lang="ES-AR">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <link rel="shortcut icon" href="http://www.unsam.edu.ar/img/favicon.ico" type="image/x-icon" />
+  <title>UNSAM - Universidad Nacional de San Martín</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <link rel="stylesheet" type="text/css" href="http://www.unsam.edu.ar/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="http://www.unsam.edu.ar/css/style.css" />
+
+  <link rel="stylesheet" type="text/css" href="http://www.unsam.edu.ar/css/index1.css?<%=numerox%>" />
+  <link href="http://www.unsam.edu.ar/css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://www.unsam.edu.ar/test/pime2017/css/mdb.css" rel="stylesheet">
+  <link href="css/styles_mdb.css" rel="stylesheet">
+  <link href="http://www.unsam.edu.ar/css/menu1.css" rel="stylesheet">
+  <link href="http://www.unsam.edu.ar/css/index2.css" rel="stylesheet">
+
+
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://www.unsam.edu.ar/js/bootstrap.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/css/components.css">
+
+
+  <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+
+
+  <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="js/toastr/toastr.min.css" rel="stylesheet">
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script type="text/javascript" src="http://www.unsam.edu.ar/js/jquery-scrolltofixed.js"></script>
+
+
+
+  <link rel="stylesheet" href="js/toastr/toastr.min.css">
+  <script type="text/javascript" src="js/toastr/toastr.min.js"></script>
+  <script type="text/javascript" src="js/toastr/toastrConfig.js"></script>
+
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  {% block scriptsHeader %} {% endblock %}
+</head>
+
+<body>
+  {% block header %} {% endblock %}
+
+  <div></div>
+
+  <div class="contenedor100" style="background-color:#fff; overflow:auto; background-image:url({{imagen_guarda}}); background-repeat:no-repeat; background-position-x: right; border-bottom:2px solid {{color_UA_Hex}}; border-top: 7px solid rgb(0, 79, 127);">
+    <div class="contenedor" style="position:relative; overflow:auto; padding:0">
+      <div class="grid3" style="background-color:{{color_UA_Hex}}; min-height:130px;">
+        <div id="menu_ua">
+          <div class="titulo"> {% block titulo %}{% endblock %} </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contenedor100" style="background-color:#fff;">
+    <div class="contenedor">
+      <div class="grid12">
+        <div id="contenido">
+          {% block antesContenido %}
+          <!-- Area para alertas o mensajes arriba de todo -->
+          {% endblock %} {% block contenido %} {% endblock %}
+          <div style="clear: both"></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="clear:both; margin-top:150px;"></div>
+
+  <footer style="background-color:#fff;border-top:7px solid #2C88CD" id="footer-sec">
+    <div class="contenedor100" style="overflow:auto; background-color:#fff; color:#444">
+      <div class="contenedor" style="position:relative">
+        <div class="grid9">
+          <div style="margin:20px;">
+            {% block footer %} {% endblock %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- SCRIPTS -->
+
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/tether.min.js"></script>
+
+  <!-- <script src="js/bootstrap.js"></script> -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+  <!-- BoostBox JavaScript -->
+  <script type="text/javascript" src="js/bootbox.min.js"></script>
+
+</body>
+
+</html>
